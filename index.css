@@ -1,3 +1,19 @@
+header {
+  height: auto;
+  width:80%;
+  max-width: 80%;
+  border: 2px;
+  display: block;
+}
+
+.h1 {
+  height: auto;
+  width:80%;
+  max-width: 80%;
+  border: 2px;
+  display: block;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
