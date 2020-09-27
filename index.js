@@ -1,3 +1,5 @@
+// Top Nav Bar
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -8,7 +10,9 @@ function myFunction() {
   }
 
 var x = document.getElementById("demo");
- 
+
+//GEO Location
+
   function getLocation() {
    if (navigator.geolocation) {
      navigator.geolocation.getCurrentPosition(showPosition);
@@ -21,6 +25,8 @@ var x = document.getElementById("demo");
    x.innerHTML = "Latitude: " + position.coords.latitude +
    "<br>Longitude: " + position.coords.longitude;
   }
+
+//Range Slider 
 
   var slider = document.getElementById("myRange");
 var output = document.getElementById("slideDemo");

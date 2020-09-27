@@ -64,7 +64,7 @@ body {
   display: block;
 }
 
-/* Top Nav Menu Here: */
+/* Top Nav Menu Here: W3 Schools styles for mobile responsive nav menu */
 
   .topnav {
     overflow: hidden;
@@ -116,7 +116,66 @@ body {
       text-align: left;
     }
   }
-/* everything above W3 Schools styles for mobile responsive nav menu */
+
+/* Flex Container */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  height: 250px;
+  background-color: White;
+}
+
+.flex-container>div {
+  background-color: Red;
+  border-radius:100px; 
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.flex-container>div:hover {
+  background-color: #4CAF50;
+  color: white;
+ }
+
+ .flex-container>div:hover {
+  background-color: #4caf50;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.flex-container.button1>div {
+  transition-duration: 0.25s;
+  display: flex;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  color: white;
+  padding: 0%;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0% 0%;
+ }
+
+ .button1:hover {
+     background-color: #4caf50;
+     color: white;
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+ }
 
 /* Block Button Here: */
 
@@ -152,7 +211,7 @@ body {
     font-size: 50px;
     cursor: pointer;
     text-align: center;
-    margin: 4px 2px;
+    margin: 0% 0%;
    }
 
    .button:hover {
@@ -163,7 +222,7 @@ body {
   
   .button5 {border-radius: 100%;}
 
-  /* Slider Selector*/
+  /* Range Slider*/
 
   .slidecontainer {
     width: 100%;
