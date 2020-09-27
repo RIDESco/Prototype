@@ -21,3 +21,11 @@ var x = document.getElementById("demo");
    x.innerHTML = "Latitude: " + position.coords.latitude +
    "<br>Longitude: " + position.coords.longitude;
   }
+
+  var slider = document.getElementById("myRange");
+var output = document.getElementById("slideDemo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
