@@ -38,42 +38,42 @@
   <div style="padding-left:16px">
   </div>
 
-<!-- Below is my from scratch code--> 
-<p>Click the button to find Local Rides.</p>
- 
-<button onclick="getLocation()" class="block">Find Rides</button>
- 
-<p>Click the buttom to find Local Rides.</p>
- 
-<!-- <button onclick="getLocation()">Try It</button> -->
- 
+<!--Flex Container Button-->
+
+<p>Click the button to find Local Rides #1</p>
+
+<div class="flex-container">
+    <div onclick="getLocation()" class="button1">Find Rides</div>
+</div>
+  
 <p id="demo"></p>
- 
-<!-- <button class="button button1">2px</button>
-<button class="button button2">4px</button>
-<button class="button button3">8px</button>
-<button class="button button4">12px</button> -->
-
-<button onclick="getLocation()" class="button button5">Find Rides</button>
-
-<p id="demo"></p>
-
-<!--Slider Selector -->
-<h2>Custom Range Slider</h2>
+<br>
+<br>  
+<!--Range Slider -->
+<h2>Ride</h2>
 
 <div class="slidecontainer">
-  
-  <p>Preferred Ride Distance:</p>
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-
-  <p>Preferred Ride Time:</p>
-
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-
-  <p>Preferred Ride Group Size:</p>
-
-  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <input type="range" min="50" max="150" value="100" class="slider" id="myRange">
+  <p>Length: <span id="slideDemo"></span></p>
 </div>
+<br>
+<h2>Ride</h2>
+
+<div class="slidecontainer">
+  <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+  <p>Distance: <span id="slideDemo"></span></p>
+</div>  
+<br>
+<h2>Number of</h2>
+
+<div class="slidecontainer">
+  <input type="range" min="0" max="12" value="6" class="slider" id="myRange">
+  <p>Riders: <span id="slideDemo"></span></p>
+</div> 
+<br>
+  
 </body>
 </html>
+
+
 
