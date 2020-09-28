@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang "en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+
+<title>Rides.co</title>    
+
+<link rel="stylesheet" href="index.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <script src="index.js"></script>
+
+    <header>
+ 
+      <h1><img src="img/RIDES.co-2.png" alt="RIDES.co"></h1>
+
+    </header>
+<!-- Below is W3 Schools Mobile Responsive Nav Bar-->
+
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#rides">Rides</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  <div style="padding-left:16px">
+  </div>
+
+<!--Flex Container Button-->
+
+<p>Click the button to find Local Rides #1</p>
+
+<div class="flex-container">
+    <div onclick="getLocation()" class="button1">Find Rides</div>
+</div>
+  
+<p id="demo"></p>
+<br>
+<br>  
+<!--Range Slider -->
+<h2>Length of Ride(Km/Mi):</h2>
+
+<div class="slidecontainer">
+  <input type="range" min="50" max="150" value="100" class="slider" id="myRange">
+  <p>Value: <span id="slideDemo"></span></p>
+</div>
+<br>
+<h2>Ride Start Distance From Home:</h2>
+
+<div class="slidecontainer">
+  <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+  <p>Value: <span id="slideDemo"></span></p>
+</div>  
+<br>
+<h2>Number of Riders on Ride:</h2>
+
+<div class="slidecontainer">
+  <input type="range" min="0" max="12" value="6" class="slider" id="myRange">
+  <p>Value: <span id="slideDemo"></span></p>
+</div> 
+<br>
+  
+</body>
+</html>
+
+
 
