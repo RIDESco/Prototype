@@ -172,51 +172,6 @@ body {
      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
  }
 
-/* Block Button Here: */
-
-.block {
-    display: block;
-    width: 100%;
-    border: 2px white;
-    background-color: red;
-    color: white;
-    padding: 100px 50px;
-    font-size: 100px;
-    cursor: pointer;
-    text-align: center;
-   }
-    
-   .block:hover {
-    background-color: #4CAF50;
-    color: white;
-   }
-
-/* Round Button Here: */
-
-.button {
-    transition-duration: 0.25s;
-    display: block;
-    width: 100%;
-    margin-left: 1%;
-    margin-right: 1%;
-    background-color: red;
-    color: white;
-    padding: 40%;
-    display: inline-block;
-    font-size: 50px;
-    cursor: pointer;
-    text-align: center;
-    margin: 0% 0%;
-   }
-
-   .button:hover {
-       background-color: #4caf50;
-       color: white;
-       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-   }
-  
-  .button5 {border-radius: 100%;}
-
   /* Range Slider*/
 
   .slidecontainer {
@@ -226,11 +181,11 @@ body {
   .slider {
     -webkit-appearance: none;
     width: 100%;
-    height: 15px;
-    border-radius: 5px;
+    height: 10px;
+    border-radius: 2px;
     background: #d3d3d3;
     outline: none;
-    opacity: 0.7;
+    opacity: 0.95;
     -webkit-transition: .2s;
     transition: opacity .2s;
   }
