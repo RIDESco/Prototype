@@ -17,15 +17,15 @@
 
 <body>
 
- <!--Clickable event in HTML JScript https://stackoverflow.com/questions/1947263/using-an-html-button-to-call-a-javascript-function -->
+ <!--Clickable event in HTML JScript -->
   
   <input id="clickMe" type="button" value="clickme" onclick=<script type="text/javascript" src="instascan.min.js"></script> />
  
- <!--Script for Minified QR Code Reader https://github.com/chriselles/instascan -->  
+ <!--Script for Minified QR Code Reader -->  
   
   <script type="text/javascript" src="instascan.min.js"></script>
   
-  <!--END of Script for Minified QR Code Reader https://github.com/chriselles/instascan -->
+  <!--END of Script for Minified QR Code Reader -->
   
   <script src="index.js"></script>
 
@@ -52,13 +52,17 @@
 
 <!-- <p>Click the button to find Local Rides</p> -->
 
-<div class="flex-container">
-    <div onclick="getLocation()" class="button1">Find Rides</div>
+<div class="container">
+  <div onclick="getLocation()"
+  class="pulse-button">RIDES.co</div>
 </div>
-  
+
 <p id="demo"></p>
+
 <br>
-<br>  
+<br>
+  
+
 <!--Range Slider -->
 <h2>Ride</h2>
 
@@ -81,7 +85,7 @@
   <p>Riders: <span id="ridersDemo"></span></p>
 </div> 
 <br>
-<!-- Minified Jscript for QRCode reader https://github.com/chriselles/instascan -->
+<!-- Minified Jscript for QRCode reader -->
   
     <video id="preview"></video>
     <script type="text/javascript">
@@ -102,3 +106,4 @@
   
 </body>
 </html>
+  

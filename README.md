@@ -22,4 +22,4 @@ A functional RIDES.co web app capable of:
 2)Select Ride Preferences
 3)Create Rides(User generated)
 4)Share curated Local Rides based on User Preferences
-5)Scan Users attendance on Rides
+5)Scan Users attendance on Ridesgit 

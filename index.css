@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 /*myers reset (public domain) */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -20,25 +22,8 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-/* General Code Here: */
+/* Header */
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Header Code Here: */
-
-/* @media screen and (max-width: 1366px) {
-  .header {
-    text-align: center;
-    position: absolute;
-  }
-  .header .h1 {
-    width: 50%;
-  }
-
-} */
 
 .header {
   height: auto;
@@ -64,7 +49,7 @@ body {
   display: block;
 }
 
-/* Top Nav Menu Here: W3 Schools styles for mobile responsive nav menu */
+/* Nav Bar */
 
   .topnav {
     overflow: hidden;
@@ -117,95 +102,70 @@ body {
     }
   }
 
-/* Flex Container */
+/*Pulsing Button */
 
-.flex-container {
+body, html {
+  height: 50%;
+  background: #fff;
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
   background-color: White;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 0;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  background: #fff;
 }
 
-.flex-container>div {
-  background-color: Red;
-  border-radius:10px; 
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
+.pulse-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: White;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  margin-left: -10%;
+  margin-top: 10%;
+  margin-right: -10%;
+  display: block;
+  width: 150px;
+  height: 150px;
+  font-size: 1.3em;
+  font-weight: light;
+  font-family: 'Trebuchet MS', sans-serif;
   text-align: center;
-  transition: width 0.5s, height 0.5s;
-}
-
-.flex-container>div:hover {
-   width: 110px;
-   height: 110px;
-  background-color: #4caf50;
+  line-height: 150px;
+  letter-spacing: 3px;
   color: white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.button1 {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  background-color: Red;
-  border-radius:15px; 
-  width: 100px;
-  height: 100px;
   border-radius: 50%;
-  color: white;
-  font-size: 20px;
+  background: Green;
   cursor: pointer;
-  text-align: center;
-  transition: width 0.5s, height 0.5s;
+  box-shadow: 0 0 0 0 rgba(Green, .5);
+  -webkit-animation: pulse 1.5s infinite;
+}
+.pulse-button:hover {
+  -webkit-animation: none;
 }
 
-.button1:hover {
-  background-color: Green;
-}
-
-.button1:active {
-  background-color: Green;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-/* Button Animation Arrows */
-
-.button1 span {
-  cursor: pointer;
-  display: inline;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button1 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button1:hover span {
-  padding-right: 25px;
-}
-
-.button1:hover span:after {
-  opacity: 1;
-  right: 0;
+@-webkit-keyframes pulse {
+  0% {
+    @include transform(scale(.9));
+  }
+  70% {
+    @include transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(Green, 0);
+  }
+    100% {
+    @include transform(scale(.9));
+    box-shadow: 0 0 0 0 rgba(Green, 0);
+  }
 }
 
   /* Range Slider*/
